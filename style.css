@@ -1,0 +1,36 @@
+ .holder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    height: 150px;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block-one {
+    background-color: tomato;
+    flex-basis: 50%;
+    border-top-left-radius: 10px;
+  }
+  .block-five {
+    background-color: orange;
+    flex-basis: 50%;
+    border-top-right-radius: 10px;
+  }
+  .block-three {
+    background-color: purple;
+    flex-basis: 34%;
+  }
+  .block-two {
+    background-color: steelblue;
+    flex-basis: 32%;
+  }
+  .block-four {
+    background-color: green;
+    flex-basis: 34%;
+  }
