@@ -1,7 +1,8 @@
 .holder {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1000px;
+    width: 1000px;
+    height: 100px;
     border: 1px solid black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -11,32 +12,36 @@
   .item {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 400px;
+    align-items: center;;
   }
   .item:nth-child(1) {
     background-color: tomato;
     border-top-left-radius: 10px;
     flex-grow: 1;
+    flex-basis: calc((100% - 25px) / 2);
   }
   .item:nth-child(5) {
     background-color: orange;
     border-top-right-radius: 10px;
     order: 2;
     flex-grow: 1;
+    flex-basis: calc((100% - 25px) / 2);
   }
   .item:nth-child(3){
     background-color: purple;
     order: 3;
-    width: 325px;
+    flex-grow: 1;
+    flex-basis: calc((100% - 25px) / 3)
   }
   .item:nth-child(2) {
     background-color: steelblue;
     order: 4;
-    width: 350px;
+    flex-grow: 1;
+    flex-basis: calc((100% - 25px) / 3)
   }
   .item:nth-child(4) {
     background-color: green;
     order: 5;
-    width: 325px;
+    flex-grow: 1;
+    flex-basis: calc((100% - 25px) / 3)
   }
