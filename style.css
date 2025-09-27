@@ -1,43 +1,42 @@
-r
- .holder {
+.holder {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
-    height: 150px;
     border: 1px solid black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    flex-direction: row;
+
   }
   .item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    flex-basis:30%;
+    width: 400px;
+  }
+  .item:nth-child(1) {
+    background-color: tomato;
+    border-top-left-radius: 10px;
     flex-grow: 1;
   }
-  .block-one {
-    background-color: tomato;
-    flex-grow:2;
-    flex-basis: 50%;
-    border-top-left-radius: 10px;
-  }
-  .block-five {
+  .item:nth-child(5) {
     background-color: orange;
-    flex-grow: 2;
-    flex-basis: 50%;
     border-top-right-radius: 10px;
     order: 2;
+    flex-grow: 1;
   }
-  .block-three {
+  .item:nth-child(3){
     background-color: purple;
     order: 3;
+    width: 325px;
   }
-  .block-two {
+  .item:nth-child(2) {
     background-color: steelblue;
     order: 4;
+    width: 350px;
   }
-  .block-four {
+  .item:nth-child(4) {
     background-color: green;
     order: 5;
+    width: 325px;
   }
