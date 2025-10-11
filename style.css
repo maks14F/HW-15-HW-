@@ -17,14 +17,14 @@
   .item:nth-child(1) {
     background-color: tomato;
     border-top-left-radius: 10px;
-    flex-grow: 1;
-    flex-basis: calc((100% - 25px) / 2);
+    flex-grow: 2;
+    flex-basis: calc((100% - 0px) / 2);
   }
   .item:nth-child(5) {
     background-color: orange;
     border-top-right-radius: 10px;
     order: 2;
-    flex-grow: 1;
+    flex-grow: 2;
     flex-basis: calc((100% - 25px) / 2);
   }
   .item:nth-child(3){
